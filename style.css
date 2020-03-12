@@ -7,3 +7,10 @@ body
 {
 	background-color : #857491;
 }
+.buttonbar
+{
+	color : blue;
+	height : 40px;
+	background-color : lavendar;
+	text-align : center;
+}
