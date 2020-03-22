@@ -5,8 +5,8 @@
 
 body
 {
-	background-color : #E7DDEE;
-	background-image : "images/nicole-mason-cv_fqvrbKWs-unsplash.jpg"
+	background-image : "images/nicole-mason-cv_fqvrbKWs-unsplash.jpg";
+	background-color : #E7DDEE; /* used if image is unavailable */
 }
 .buttonbar
 {
