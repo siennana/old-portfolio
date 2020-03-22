@@ -5,14 +5,14 @@
 
 body
 {
-	background-color : #E9CEFC;
+	background-color : #E7DDEE;
 }
 .buttonbar
 {
 	color : teal;
 	height : 40px;
 	background-color : white;
-	text-align : center;
+	text-align : right;
 }
 .button
 {
@@ -22,4 +22,8 @@ body
 	padding : 6px;
 	font-size : 20px;
 	outline : none;
+}
+.image
+{
+
 }
