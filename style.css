@@ -5,7 +5,9 @@
 
 body
 {
-	background-image : "images/nicole-mason-cv_fqvrbKWs-unsplash.jpg";
+	background-image : url ('images/nicole-mason-cv_fqvrbKWs-unsplash.jpg');
+	background-size : cover;
+	background-repeat : no-repeat;
 	background-color : #E7DDEE; /* used if image is unavailable */
 }
 .buttonbar
