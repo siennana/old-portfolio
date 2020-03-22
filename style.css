@@ -11,6 +11,15 @@ body
 {
 	color : blue;
 	height : 40px;
-	background-color : lavendar;
+	background-color : black;
 	text-align : center;
+}
+.button
+{
+	color : black;
+	background-color : transparent;
+	border : none;
+	padding : 6px;
+	font-size : 20px;
+	outline : none;
 }
