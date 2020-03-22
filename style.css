@@ -9,14 +9,14 @@ body
 }
 .buttonbar
 {
-	color : blue;
+	color : teal;
 	height : 40px;
-	background-color : black;
+	background-color : white;
 	text-align : center;
 }
 .button
 {
-	color : black;
+	color : teal;
 	background-color : transparent;
 	border : none;
 	padding : 6px;
