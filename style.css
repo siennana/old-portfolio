@@ -3,30 +3,25 @@
 	color: #857491;
 }
 
-body
-{
-	background-image : url (images/nicole-mason-cv_fqvrbKWs-unsplash.jpg);
+body {
+	background-image : url(images/nicole-mason-cv_fqvrbKWs-unsplash.jpg);
 	background-size : cover;
-	background-repeat : no-repeat;
+	/* background-repeat : no-repeat; */
 	background-color : #E7DDEE; /* used if image is unavailable */
 }
-.buttonbar
-{
-	color : black;
-	height : 40px;
-	background-color : black;
+.buttonbar {
+	height : 30px;
+	background-color : 919191; /* 9E9E9E */
 	text-align : right;
 }
-.button
-{
+.button {
 	color : teal;
 	background-color : transparent;
 	border : none;
 	padding : 6px;
-	font-size : 20px;
+	font-size : 15px;
 	outline : none;
 }
-.image
-{
+.image {
 
 }
