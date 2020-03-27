@@ -1,13 +1,13 @@
-﻿h1
-{
-	color: white;
-}
-
+﻿
 body {
 	background-image : url(images/grayscale-photography-of-trees-1529881.jpg);
 	background-size : cover;
 	/* background-repeat : no-repeat; */
-	background-color : #E7DDEE; /* used if image is unavailable */
+	background-color : black; /* used if image is unavailable */
+}
+.content {
+	color : white;
+	text-align : center;
 }
 .buttonbar {
 	height : 30px;
@@ -21,7 +21,4 @@ body {
 	padding : 6px;
 	font-size : 15px;
 	outline : none;
-}
-.image {
-
 }
