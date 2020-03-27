@@ -2,3 +2,16 @@
 {
 	background-color : white;
 }
+.buttonbar {
+	height : 30px;
+	background-color : transparent; /* 9E9E9E */
+	text-align : right;
+}
+.button {
+	color : black; /*443755*/
+	background-color : transparent;
+	border : none;
+	padding : 6px;
+	font-size : 15px;
+	outline : none;
+}
