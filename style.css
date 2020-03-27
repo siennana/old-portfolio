@@ -1,21 +1,21 @@
 ﻿h1
 {
-	color: #857491;
+	color: white;
 }
 
 body {
-	background-image : url(images/nicole-mason-cv_fqvrbKWs-unsplash.jpg);
+	background-image : url(images/grayscale-photography-of-trees-1529881.jpg);
 	background-size : cover;
 	/* background-repeat : no-repeat; */
 	background-color : #E7DDEE; /* used if image is unavailable */
 }
 .buttonbar {
 	height : 30px;
-	background-color : 919191; /* 9E9E9E */
+	background-color : transparent; /* 9E9E9E */
 	text-align : right;
 }
 .button {
-	color : teal;
+	color : white; /*443755*/
 	background-color : transparent;
 	border : none;
 	padding : 6px;
