@@ -1,12 +1,25 @@
 ﻿
 body {
-	background-image: url(images/grayscale-photography-of-trees-1529881.jpg);
-	background-size: cover;
-	/* background-repeat : no-repeat; */
+	/*background-image: url(images/grayscale-photography-of-trees-1529881.jpg);*/
+	/*background-size: cover*/
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 	background-color: black; /* used if image is unavailable */
 	font-family: source-code-pro, monospace;
 	font-style: normal;
 	font-weight: 200;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .buttonbar {
 	height: 30px;
@@ -42,21 +55,31 @@ body {
 	top: 200px;
 	transform: translate(-50%, -50%);
 }
-.social-icons {
-	position: absolute;
-	left: 50%;
-	top: 650px;
-	transform: translate(-50%, -50%);
+.wrapper {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;*/
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  transform: translate(-50%, -50%);
 }
-.social-icons li {
-	display: inline-block;
-	list-style-type: none;
+.wrapper i {
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
 }
-.social-icons li a {
-	border-bottom: none;
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
 }
-.social-icons li img {
-	width: 50px;
-	height: 50px;
-	margin-right: 20px;
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
 }
