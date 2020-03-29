@@ -70,13 +70,16 @@ body {
   transition: all ease-in-out 150ms;
 }
 .wrapper a:nth-child(1) {
-  color: #dd4b39;
+  color: #2FE1EE;
 }
 .wrapper a:nth-child(2) {
-  color: #4867AA;
+  color: #1DA1F2;
 }
 .wrapper a:nth-child(3) {
-  color: #1DA1F2;
+  color: #E777FC;
+}
+.wrapper a:nth-child(4) {
+  color: #F9BE18;
 }
 .wrapper i:hover {
   margin-top: -3px;
