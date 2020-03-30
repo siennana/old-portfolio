@@ -1,6 +1,6 @@
 ﻿
 body {
-	background: linear-gradient(-45deg, #FFC593, #FFA274, #23a6d5, #23C4D5);
+	background: linear-gradient(-90deg, #FFC593, #FFA274, #23a6d5, #23C4D5);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	background-color: black; /* used if image is unavailable */
@@ -57,10 +57,7 @@ body {
  left: 50%;
  top: 650px;
  transform: translate(-50%, -50%);
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;*/
+
 }
 .wrapper i {
   padding: 10px;
@@ -68,13 +65,16 @@ body {
   transition: all ease-in-out 150ms;
 }
 .wrapper a:nth-child(1) {
-  color: black; /*red*/ 
+  color: #790000; 
 }
 .wrapper a:nth-child(2) {
-  color: black;
+  color: #000D7F;
 }
 .wrapper a:nth-child(3) {
-  color: black;
+  color: #300079;
+}
+.wrapper a:nth-child(4) {
+	color: black;
 }
 .wrapper i:hover {
   margin-top: -3px;
