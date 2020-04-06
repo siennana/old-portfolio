@@ -37,7 +37,7 @@ body {
 }
 .title {
 	color: white;
-	font-size: 50px;
+	font-size: 3vw;
 	text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
 	position: absolute;
 	left: 50%;
@@ -56,11 +56,10 @@ body {
 	transform: translate(-50%, -50%);
 }
 .wrapper {
- position: absolute;
- left: 50%;
- top: 420px;
- transform: translate(-50%, -50%);
-
+	position: absolute;
+	left: 50%;
+	top: 420px;
+	transform: translate(-50%, -50%);
 }
 .wrapper i {
   padding: 10px;
@@ -68,18 +67,18 @@ body {
   transition: all ease-in-out 150ms;
 }
 .wrapper a:nth-child(1) {
-  color: white; 
+	color: white; 
 }
 .wrapper a:nth-child(2) {
-  color: white;
+	color: white;
 }
 .wrapper a:nth-child(3) {
-  color: white;
+	color: white;
 }
 .wrapper a:nth-child(4) {
 	color: white;
 }
 .wrapper i:hover {
-  margin-top: -3px;
-  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+	margin-top: -3px;
+	text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
 }
