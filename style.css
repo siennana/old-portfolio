@@ -1,9 +1,9 @@
 ﻿
 body {
 	/*red -> blue -> grey*/
-	background: linear-gradient(-45deg, #e16a6a, #d05bae, #2aa2b0, #b1f2ff);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	background: linear-gradient(-45deg, #78ffd6, #007991, #0ED2F7, #B2FEFA);
+	background-size: 700% 700%;
+	animation: gradient 20s ease infinite;
 	background-color: black; /* used if image is unavailable */
 	font-family: 'IBM Plex Mono', monospace;
 	/*font-weight: 200;*/
@@ -42,17 +42,24 @@ body {
 .front-flex {
 	color: white;
 	text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
-	text-align: center;
-	width: 90%;
-    position: relative;
-    display: block;
-    margin: auto;
 }
 .title {
 	font-size: 3em;
+	position: relative;
+	text-align: center;
+	width: 30%;
+    display: block;
+    margin: auto;
+	top: 190px;
 }
 .description {
 	font-size: 1em;
+	position: relative;
+	text-align: center;
+	width: 30%;
+    display: block;
+    margin: auto;
+	top: 200px;
 }
 .wrapper {
 	position: absolute;
