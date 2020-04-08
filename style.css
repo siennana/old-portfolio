@@ -5,8 +5,7 @@ body {
 	background-size: 700% 700%;
 	animation: gradient 20s ease infinite;
 	background-color: black; /* used if image is unavailable */
-	font-family: 'IBM Plex Mono', monospace;
-	/*font-weight: 200;*/
+	font-family: 'Quicksand', sans-serif;
 }
 @keyframes gradient {
 	0% {
@@ -45,21 +44,23 @@ body {
 }
 .title {
 	font-size: 3em;
+	font-weight: 500;
 	position: relative;
 	text-align: center;
 	width: 30%;
     display: block;
     margin: auto;
-	top: 190px;
+	top: 225px;
 }
 .description {
 	font-size: 1em;
+	font-weight: 500;
 	position: relative;
 	text-align: center;
 	width: 30%;
     display: block;
     margin: auto;
-	top: 200px;
+	top: 230px;
 }
 .wrapper {
 	position: absolute;
