@@ -57,7 +57,7 @@
   text-shadow: -5px 0 magenta;
   overflow: hidden;
   top: 0;
-  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+  animation: noise-1 3s linear infinite alternate-reverse, title 5s 5.05s infinite;
 }
 .title::after {
   content: attr(data-text);
@@ -66,7 +66,7 @@
   text-shadow: -5px 0 lightgreen;
   overflow: hidden;
   top: 0;
-  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+  animation: noise-2 3s linear infinite alternate-reverse, title 5s 5s infinite;
 }
 @keyframes title {
   1%{
@@ -74,26 +74,6 @@
   }
   2%{
     transform: rotateX(0deg) skewX(0deg);
-  }
-}
-@keyframes noise-1 {
-  $steps: 30;
-  @for $i from 1 through $steps {
-    #{percentage($i*(1/$steps))} {
-      $top: random(100);
-      $bottom: random(101 - $top);
-      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
-    }
-  }
-}
-@keyframes noise-2 {
-  $steps: 30;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      $top: random(100);
-      $bottom: random(101 - $top);
-      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
-    }
   }
 }
 .scanlines::before {
@@ -122,7 +102,6 @@
   }
 }
 .glow {
-  @extend .title;
   text-shadow: 0 0 1000px rgb(223, 191, 191);
   color: transparent;
   position: absolute;
