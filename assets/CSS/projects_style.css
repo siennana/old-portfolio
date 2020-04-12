@@ -115,7 +115,8 @@
     margin-right: auto
 }
 .description {
-	color: white;
+  color: white;
+  text-align: center;
 }
 .image {
 	height: 200px;
