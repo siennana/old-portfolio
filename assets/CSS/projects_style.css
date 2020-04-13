@@ -39,7 +39,7 @@
 .title-div {
 	position: absolute;
 	top: 0;
-	left: 100px;
+  left: 5%;
 }
 .title {
 	color: white;
@@ -107,7 +107,8 @@
   top: 0;
 }
 .projects {
-	position: relative;
+  position: relative;
+  top: 10%;
 	width: 500px;
   margin-left: auto;
   margin-right: auto;

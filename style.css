@@ -1,7 +1,6 @@
 ﻿
 body {
-	/*red -> blue -> grey*/
-	background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #B2FEFA);
+	background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #70E1B7);
 	background-size: 700% 700%;
 	animation: gradient 20s ease infinite;
 	background-color: black; /* used if image is unavailable */
