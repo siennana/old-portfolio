@@ -129,17 +129,21 @@
   transform: translate(-50%, -50%);
 }
 #museum.description {
-  
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 #bnc.description {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Cinzel', serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 #psyche.description {
-  
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2em;
 }
 .container:hover .image {
   opacity: .6;
