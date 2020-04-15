@@ -1,7 +1,7 @@
 ﻿body {
-	background: linear-gradient(-45deg, #B70D0D, #000000, #000000, #B70D0D);
-	background-size: 200% 200%;
-	background-color: black; /* used if image is unavailable */
+	/*background: linear-gradient(135deg, #4C71DE, #460808);*/
+	background-size: 100% 100%;
+	background-color: #0E131C; /* used if image is unavailable */
 	font-family: source-code-pro, monospace;
 	font-style: normal;
 	font-weight: 200;
