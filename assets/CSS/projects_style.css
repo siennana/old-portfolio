@@ -119,6 +119,7 @@
 .image {
 	height: auto;
   width: 500px;
+  border-radius: 15px;
 }
 .description {
   visibility: hidden;
