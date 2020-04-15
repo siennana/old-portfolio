@@ -1,0 +1,30 @@
+body
+{
+	background-color: black;
+	font-family: source-code-pro, monospace;
+	font-style: normal;
+	font-weight: 200;
+}
+.buttonbar {
+	height: 30px;
+	background-color: transparent; /* 9E9E9E */
+	text-align: right;
+}
+.button {
+	color: white; /*443755*/
+	background-color: transparent;
+	border: none;
+	padding: 6px;
+	font-size: 15px;
+	outline: none;
+	font-family: source-code-pro, monospace;
+	font-style: normal;
+	font-weight: 200;
+}
+.title {
+	color: white;
+}
+.resume {
+    width: 100%;
+    height: 50vw;
+}
