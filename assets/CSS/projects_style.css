@@ -152,3 +152,9 @@
 .container:hover .description {
   visibility: visible;
 }
+.text {
+  color: white;
+  width: 300px;
+  top: 20%;
+  left: 5%;
+}
