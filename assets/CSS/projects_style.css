@@ -21,7 +21,9 @@
 	position: relative;
 }
 .buttonbar {
-	height: 30px;
+  position: absolute;
+  height: 30px;
+  width: 100%;
 	background-color: transparent;
 	text-align: right;
 }
@@ -32,13 +34,12 @@
 	padding: 6px;
 	font-size: 15px;
 	outline: none;
-	font-family: source-code-pro, monospace;
-	font-style: normal;
+  font-family: source-code-pro, monospace;
 	font-weight: 200;
 }
 .title-div {
 	position: absolute;
-	top: 0;
+	top: 30%;
   left: 5%;
 }
 .title {
@@ -108,7 +109,6 @@
 }
 .projects {
   position: relative;
-  top: 10%;
 	width: 500px;
   margin-left: auto;
   margin-right: auto;
