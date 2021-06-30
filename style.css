@@ -1,7 +1,7 @@
 ﻿
-html, body {
+html {
 	height: 100%;
-  }
+}
   
   body {
 	background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #70E1B7);
@@ -50,8 +50,8 @@ nav a:hover {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	border-radius: 25px;
-	box-shadow: 2px 2px 50px 30px rgba(255, 0, 0, 0.171);
+	border-radius: 20px;
+	box-shadow: 2px 2px 50px 30px rgba(255, 0, 0, 0.247);
 }
 .content-wrapper {
 	padding-top: 15%;
