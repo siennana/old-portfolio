@@ -21,22 +21,24 @@ html {
 		  background-position: 0% 50%;
 	  }
   }
-.buttonbar {
-	height: 30px;
-	background-color: transparent;
-	text-align: right;
-}
-.nav {
+nav {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 2.5em;
 	transition: all ease-in-out 100ms;
 }
-.nav a {
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline;
+	padding: 0 1.5em;
+    border-left: 2px solid #ffffff;
+}
+nav a {
 	color: white;
 	text-decoration: none;
-	padding: 20px;
 }
-.nav a:hover {
+nav a:hover {
 	font-size: 1.1em;
 	text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
 }
@@ -57,7 +59,11 @@ html {
 	justify-content: center;
 }
 .title {
-	font-size: 3em;
+	font-size: 4em;
+	display: inline;
+}
+.title .last {
+	color:rgb(240, 130, 255);
 }
 .description {
 	font-size: 1em;
@@ -85,3 +91,9 @@ html {
 	font-size: 2.2em;
 	text-shadow: 0px 14px 10px rgba(255, 79, 79, 0.4);
 }
+@media only screen and (max-width: 600px) {
+	.main-content {
+	  height: 80%;
+	  width: 80%;
+	}
+  }
