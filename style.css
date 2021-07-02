@@ -30,9 +30,6 @@ nav {
 	margin-bottom: 10px;
 	transition: all ease-in-out 100ms;
 }
-nav ul {
-	list-style: none;
-}
 nav .button-wrapper {
 	display: flex;
 	justify-content: center;
@@ -103,14 +100,22 @@ nav a {
 }
 .about-wrapper {
 	background-color: black;
-	height: 
+	color: white;
 }
 .about-title {
 	font-size: 3em;
-	color: white;
+	padding-top: 1em;
+	padding-left: 4em;
 }
 .about-title .first {
 	color:rgb(240, 130, 255);
+}
+.about-wrapper p {
+	padding: 1em 6em 1em 6em;
+	line-height: 2em;
+}
+.about-wrapper ul {
+	list-style: none;
 }
 @media only screen and (max-width: 600px) {
 	.main-content {
