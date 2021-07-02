@@ -47,6 +47,7 @@ nav .button:hover {
 }
 nav a {
 	color: white;
+	letter-spacing: 3px;
 	text-decoration: none;
 }
 .main-content {
