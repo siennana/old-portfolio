@@ -8,6 +8,15 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
+span {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
+}
 .title-wrapper {
 	background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #70E1B7);
 	background-size: 400% 400%;
@@ -66,12 +75,15 @@ nav a {
 	align-items: center;
 	justify-content: center;
 }
-.title {
+.name-title {
 	font-size: 4em;
 	display: inline;
 }
-.title .last {
+.name-title .last {
 	color:rgb(240, 130, 255);
+}
+.main-content h1 {
+	font-size: 1.5em;
 }
 .description {
 	font-size: 1em;
