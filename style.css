@@ -77,10 +77,13 @@ nav a {
 }
 .name-title {
 	font-size: 4em;
-	display: inline;
+	display: flex;
+	justify-content: center;
 }
 .name-title .last {
 	color:rgb(240, 130, 255);
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .main-content h1 {
 	font-size: 1.5em;
@@ -120,16 +123,18 @@ nav a {
 	border: 1px solid rgb(15, 195, 201);
 	border-radius: 5px;
 }
-.about-wrapper {
-	background-color: black;
-	color: white;
-	padding-bottom: 5rem;
-}
-.about-wrapper .subtitle {
+.subtitle {
+	display: flex;
+	justify-content: left;
 	font-size: 3em;
 	padding-left: 3em;
 	padding-top: 0.8em;
 	margin-bottom: 0.5em;
+}
+.about-wrapper {
+	background-color: black;
+	color: white;
+	padding-bottom: 5rem;
 }
 .about-title .first {
 	color:rgb(240, 130, 255);
@@ -137,9 +142,6 @@ nav a {
 .project-subtitle {
 	font-size: 1.2rem;
 	color: rgb(1, 161, 1);
-}
-.project-subtitle span {
-	padding: 1em;
 }
 .project-subtitle .link {
 	color: rgb(238, 255, 0);
