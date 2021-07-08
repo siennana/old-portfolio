@@ -18,11 +18,16 @@ span {
 	}
 }
 .title-wrapper {
-	background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #70E1B7);
-	background-size: 400% 400%;
+	/*background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #70E1B7);*/
+	/*background-image: url(https://source.unsplash.com/eBRTYyjwpRY);*/
+	background-image: url(assets/images/laptop-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
 	animation: gradient 15s ease infinite;
 } 
-  @keyframes gradient {
+/*  @keyframes gradient {
 	  0% {
 		  background-position: 0% 50%;
 	  }
@@ -32,12 +37,13 @@ span {
 	  100% {
 		  background-position: 0% 50%;
 	  }
-  }
+  }*/
 nav {
 	position: absolute;
-	margin-top: 2.5em;
-	margin-bottom: 10px;
+	margin-top: 10%;
+	margin-left: 7%;
 	transition: all ease-in-out 100ms;
+	z-index: 999;
 }
 nav .button-wrapper {
 	display: flex;
@@ -53,7 +59,7 @@ nav .button-wrapper {
 }
 .button:hover {
 	transform: translateY(-5px);
-	background-color: #e57dff;
+	background-color: #5bff91;
 	cursor: pointer;
 }
 nav a {
@@ -63,16 +69,16 @@ nav a {
 }
 .main-content {
 	position: relative;
-	color: rgb(219, 219, 219);
-	background-color: #1d1d1d;
-	height: 50%;
+	color: rgb(255, 255, 255);
+	/*background-color: #1d1d1d;*/
+	height: 65%;
 	width: 50%;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-40%, -60%);
 	text-align: center;
 	border-radius: 10px;
-	box-shadow: 2px 2px 50px 30px rgba(255, 0, 0, 0.247);
+	box-shadow: 2px 2px 50px 30px rgba(255, 255, 255, 0.452);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -83,9 +89,12 @@ nav a {
 	justify-content: center;
 }
 .name-title .last {
-	color:rgb(240, 130, 255);
+	color:rgb(0, 0, 0);
 	padding-left: 10px;
 	padding-right: 10px;
+}
+.name-title .icon:hover {
+	transform: translateY(-5px);
 }
 .main-content h1 {
 	font-size: 1.5em;
@@ -101,16 +110,16 @@ nav a {
   transition: all ease-in-out 100ms;
 }
 .wrapper a:nth-child(1) {
-	color: #ff8181; 
+	color: #e40000; 
 }
 .wrapper a:nth-child(2) {
-	color: #4da6ff;
+	color: #0063c7;
 }
 .wrapper a:nth-child(3) {
-	color: #e57dff;
+	color: #58006e;
 }
 .wrapper a:nth-child(4) {
-	color: #55da9e;
+	color: #15cc7a;
 }
 .wrapper i:hover {
 	transform: translateY(-5px);
