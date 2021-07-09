@@ -4,10 +4,6 @@
 body {
 	font-family: 'Source Code Pro', monospace;
 }
-.screen {
-	height: 100vh;
-	width: 100vw;
-}
 span {
 	border-right: .05em solid;
 	animation: caret 1s steps(1) infinite;
@@ -19,12 +15,12 @@ span {
 }
 .title-wrapper {
 	/*background: linear-gradient(-45deg, #F99B76, #AC8AF4, #0ED2F7, #70E1B7);*/
-	/*background-image: url(https://source.unsplash.com/eBRTYyjwpRY);*/
-	background-image: url(assets/images/laptop-2.jpg);
+	background-image: url(assets/images//Artboard-blue.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	animation: gradient 15s ease infinite;
 } 
 /*  @keyframes gradient {
@@ -39,27 +35,24 @@ span {
 	  }
   }*/
 nav {
-	position: absolute;
-	margin-top: 10%;
-	margin-left: 7%;
 	transition: all ease-in-out 100ms;
 	z-index: 999;
+	margin-bottom: 20px;
 }
 nav .button-wrapper {
 	display: flex;
 	justify-content: center;
-	width: 98vw;
 }
 .button {
-	padding: 10px 20px 10px 20px;
-	margin-right: 20px;
-	border: 1px solid white;
+	padding: 10px 10px 10px 10px;
+	margin-right: 10px;
+	border: 1px solid rgb(20, 0, 199);
 	border-radius: 5px;
 	transition: all ease-in-out 100ms;
 }
 .button:hover {
 	transform: translateY(-5px);
-	background-color: #5bff91;
+	background-color: #7500c4;
 	cursor: pointer;
 }
 nav a {
@@ -70,16 +63,14 @@ nav a {
 .main-content {
 	position: relative;
 	color: rgb(255, 255, 255);
-	/*background-color: #1d1d1d;*/
-	height: 65%;
-	width: 50%;
+	/*background-color: #6d6fff;*/
+	height: 20rem;
+	width: 40rem;
 	left: 50%;
 	top: 50%;
-	transform: translate(-40%, -60%);
+	transform: translate(-55%, -80%);
 	text-align: center;
-	border-radius: 10px;
-	box-shadow: 2px 2px 50px 30px rgba(255, 255, 255, 0.452);
-	display: flex;
+	border-radius: 3px;
 	align-items: center;
 	justify-content: center;
 }
@@ -89,7 +80,7 @@ nav a {
 	justify-content: center;
 }
 .name-title .last {
-	color:rgb(0, 0, 0);
+	color:rgb(255, 0, 212);
 	padding-left: 10px;
 	padding-right: 10px;
 }
