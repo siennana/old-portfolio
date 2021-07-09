@@ -1,0 +1,69 @@
+/*
+*  TODO:
+*    * make desktop background
+*    * add date & time and do UI
+*    * 
+*/
+
+body {
+    background-color: rgb(18, 16, 104);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
+}
+.panel {
+    position: absolute;
+    background-color: rgb(10, 0, 53);
+    width: 40rem;
+    height: 20rem;
+    border: 2px solid rgb(41, 0, 221);
+    overflow: auto;
+}
+.panel .top_bar {
+    height: 25px;
+    background-color: rgb(192, 192, 192);
+    border: 2px solid rgb(41, 0, 221);
+    display: flex;
+    justify-content: end;
+}
+.top_bar .bar_click {
+    border-left: 1px solid rgb(41, 0, 221);
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+.top_bar .bar_click:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.panel img {
+    width: 500px;
+}
+.panel .subtitle {
+    display: block;
+    width: 40rem;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color:rgb(255, 214, 34)
+}
+.panel .subtitle .cmd {
+    color: rgb(78, 255, 116);
+}
+.panel .content {
+    color: white;
+    padding-left: 10px;
+    width: 50%;
+}
+.panel-1 {
+    top: 5%
+}
+.panel-2 {
+    top: 45%;
+    left: 25%;
+}
+.panel-3 {
+    top: 10%;
+    left: 50%;
+}
+button a {
+    color: white;
+}
