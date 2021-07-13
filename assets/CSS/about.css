@@ -2,11 +2,15 @@
 *  TODO:
 *    * make desktop background
 *    * add date & time and do UI
-*    * 
+*    * CHAT BOX : people log in with username and chat with other people on the site
 */
 
 body {
     background-color: rgb(18, 16, 104);
+    background-image: url(../images/0_original.jpg);
+    background-size: cover;
+	background-position: top;
+    background-repeat: no-repeat;
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
 }
