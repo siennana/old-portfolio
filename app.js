@@ -30,3 +30,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     }
     StartTextAnimation(0);
 });
+
+function closeWindow() {
+    var x = document.getElementById("close").parentElement.parentElement;  
+    x.style.display = "none";
+}

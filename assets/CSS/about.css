@@ -7,7 +7,7 @@
 
 body {
     background-color: rgb(18, 16, 104);
-    background-image: url(../images/0_original.jpg);
+    background-image: url(../images/neon_retro.jpg);
     background-size: cover;
 	background-position: top;
     background-repeat: no-repeat;
@@ -68,6 +68,11 @@ body {
     top: 10%;
     left: 50%;
 }
-button a {
-    color: white;
+.time {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 800;
+    bottom: 5%;
+    right: 5%;
+    color: rgb(210, 0, 238);
 }

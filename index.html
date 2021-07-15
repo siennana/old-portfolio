@@ -1,7 +1,9 @@
+<!DOCTYPE html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel = "stylesheet" href = "style.css">
-	 <script src="app.js"></script> 
+	<script src="app.js"></script> 
 	
 	<!--Google Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +44,11 @@
 					<div class="button"><a href="assets/about.html">PROCEED TO SITE ></a></div>				</div>
 			</div>
 		</div>
-		<div class="panel panel-music">
+		<div id="music" class="panel panel-music">
 			<div class="top_bar">
 				<div class="min bar_click"><i class="far fa-window-minimize"></i></div>
 				<div class="max bar_click"><i class="far fa-window-maximize"></i></div>
-				<div class="exit bar_click"><i class="far fa-window-close"></i></div>
+				<div onclick="closeWindow()" id="close" class="exit bar_click"><i class="far fa-window-close"></i></div>
 			</div>
 			<div class="title"></div>
 			<div class="content">
