@@ -68,6 +68,44 @@ body {
     top: 10%;
     left: 50%;
 }
+.panel-art {
+    position: relative;
+    width: 75vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 2rem;
+}
+.art_wrapper {
+    display: flex;
+    align-content: space-around;
+}
+.panel img {
+    padding-top: 1rem;
+    width: 30rem;
+    height: auto;
+}
+.icon {
+    position: absolute;
+    height: 5rem;
+    width: 4rem;
+    background-color: rgba(100, 148, 237, 0.5);
+    border: 2px solid rgb(41, 0, 221);
+    color: cornsilk;
+    text-align: center;
+    transition: all ease-in-out 100ms;
+}
+.icon i {
+    padding-top: 20px;
+    font-size: 2.5rem;
+}
+.icon:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.art-button {
+    bottom: 5%;
+    left: 5%;
+}
 .time {
     position: absolute;
     font-size: 2.5rem;
