@@ -21,6 +21,7 @@ body {
     height: 20rem;
     border: 2px solid rgb(41, 0, 221);
     overflow: auto;
+    visibility: hidden;
 }
 .panel .top_bar {
     height: 25px;
@@ -84,27 +85,30 @@ body {
     width: 30rem;
     height: auto;
 }
+.desktop-icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
 .icon {
-    position: absolute;
-    height: 5rem;
+    height: 6rem;
     width: 4rem;
-    background-color: rgba(100, 148, 237, 0.5);
-    border: 2px solid rgb(41, 0, 221);
-    color: cornsilk;
-    text-align: center;
+    padding-top: 20px;
+}
+.icon img {
+    height: 4.5rem;
     transition: all ease-in-out 100ms;
 }
-.icon i {
-    padding-top: 20px;
-    font-size: 2.5rem;
-}
-.icon:hover {
+.icon img:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
-.art-button {
-    bottom: 5%;
-    left: 5%;
+.icon-text {
+    color: white;
+}
+.terminal-button img {
+    width: 3.3rem;
+    height: 3rem;
 }
 .time {
     position: absolute;
