@@ -44,9 +44,6 @@ body {
     background-color: greenyellow;
     cursor: pointer;
 }
-.panel img {
-    width: 500px;
-}
 .panel .subtitle {
     display: block;
     width: 40rem;
@@ -59,11 +56,15 @@ body {
 }
 .panel .content {
     color: white;
-    padding-left: 10px;
-    width: 50%;
+    padding-left: 20px;
+    width: 75%;
 }
 .panel-1 {
-    top: 5%
+    height: 25rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
 }
 .panel-2 {
     top: 45%;
@@ -73,19 +74,11 @@ body {
     top: 10%;
     left: 50%;
 }
-.panel-art {
-    position: relative;
-    width: 75vw;
-    height: 90vh;
-    margin: auto;
-    margin-top: 2rem;
-}
 .art_wrapper {
     display: flex;
     align-content: space-around;
 }
 .panel img {
-    padding-top: 1rem;
     width: 30rem;
     height: auto;
 }
@@ -118,4 +111,7 @@ body {
 .terminal-button {
     height: 3.5rem;
     padding-top: 2rem;
+}
+.resume-button {
+    padding-top: 30px;
 }
