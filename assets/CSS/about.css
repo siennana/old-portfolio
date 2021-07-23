@@ -4,7 +4,10 @@
 *    * add date & time and do UI
 *    * CHAT BOX : people log in with username and chat with other people on the site
 */
-
+body {
+    height: 98vh;
+    padding: 0;
+}
 body {
     background-color: rgb(18, 16, 104);
     background-image: url(../images/neon_retro.jpg);
@@ -13,6 +16,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8em;
+    image-rendering: -webkit-optimize-contrast;
 }
 .panel {
     position: absolute;
@@ -91,12 +95,13 @@ body {
     margin-left: 1rem;
 }
 .icon {
-    height: 6rem;
-    width: 4rem;
+    height: 4rem;
+    width: 5rem;
+    text-align: center;
     padding-top: 20px;
 }
 .icon img {
-    height: 4.5rem;
+    width: 2.5rem;
     transition: all ease-in-out 100ms;
 }
 .icon img:hover {
@@ -107,14 +112,10 @@ body {
     color: white;
 }
 .terminal-button img {
-    width: 3.3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2rem;
 }
-.time {
-    position: absolute;
-    font-size: 2.5rem;
-    font-weight: 800;
-    bottom: 5%;
-    right: 5%;
-    color: rgb(210, 0, 238);
+.terminal-button {
+    height: 3.5rem;
+    padding-top: 2rem;
 }
