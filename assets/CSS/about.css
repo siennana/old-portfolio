@@ -115,3 +115,52 @@ body {
 .resume-button {
     padding-top: 30px;
 }
+.bottom-bar {
+    position: fixed;
+    background-color: blueviolet;
+    color: white;
+    height: 2.5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bottom-bar .start {
+    background-color: rgba(167, 0, 218, 0.349);
+    border: 2px solid rgb(41, 0, 221);
+    width: 3.5rem;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.bottom-bar .start:hover {
+    cursor: pointer;
+}
+.link-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.link-wrapper i {
+    padding: 10px;
+    transition: all ease-in-out 100ms;
+}
+.link-wrapper a:nth-child(1) {
+    color: #e01818; 
+}
+.link-wrapper a:nth-child(2) {
+    color: #2f88e0;
+}
+.link-wrapper a:nth-child(3) {
+    color: #58006e;
+}
+.link-wrapper a:nth-child(4) {
+    color: #faeb20;
+}
+.link-wrapper a:nth-child(5) {
+    color: #00b161;
+}
+.link-wrapper i:hover {
+    transform: translateY(-5px);
+}
