@@ -20,7 +20,7 @@ body {
 }
 .panel {
     position: absolute;
-    background-color: rgb(10, 0, 53);
+    background-color: rgba(10, 0, 53, 0.815);
     width: 40rem;
     height: 20rem;
     border: 2px solid rgb(41, 0, 221);
@@ -31,6 +31,14 @@ body {
     height: 25px;
     background-color: rgb(192, 192, 192);
     border: 2px solid rgb(41, 0, 221);
+    display: flex;
+    justify-content: space-between;
+}
+.top_bar .descriptor {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.top_bar .buttons {
     display: flex;
     justify-content: end;
 }
@@ -55,32 +63,17 @@ body {
     color: rgb(78, 255, 116);
 }
 .panel .content {
-    color: white;
+    color: rgb(228, 228, 228);
     padding-left: 20px;
     width: 75%;
 }
-.panel-1 {
+.terminal {
     height: 25rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: visible;
-}
-.panel-2 {
-    top: 45%;
-    left: 25%;
-}
-.panel-3 {
-    top: 10%;
-    left: 50%;
-}
-.art_wrapper {
-    display: flex;
-    align-content: space-around;
-}
-.panel img {
-    width: 30rem;
-    height: auto;
+    box-shadow: 0px 0px 15px 1px rgba(41, 0, 221, 0.808);
 }
 .desktop-icons {
     display: flex;
@@ -117,7 +110,8 @@ body {
 }
 .bottom-bar {
     position: fixed;
-    background-color: blueviolet;
+    background-color: rgba(97, 4, 184, 0.733);
+    border-top: 5px solid rgb(12, 0, 68);
     color: white;
     height: 2.5rem;
     left: 0;
@@ -153,7 +147,7 @@ body {
     color: #2f88e0;
 }
 .link-wrapper a:nth-child(3) {
-    color: #58006e;
+    color: #b728db;
 }
 .link-wrapper a:nth-child(4) {
     color: #faeb20;
