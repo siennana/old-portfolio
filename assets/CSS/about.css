@@ -64,8 +64,7 @@ body {
 }
 .panel .content {
     color: rgb(228, 228, 228);
-    padding-left: 20px;
-    width: 75%;
+    width: 80%;
 }
 .terminal {
     height: 25rem;
@@ -158,3 +157,4 @@ body {
 .link-wrapper i:hover {
     transform: translateY(-5px);
 }
+
