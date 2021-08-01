@@ -76,19 +76,22 @@ body {
     box-shadow: 0px 0px 15px 1px rgba(41, 0, 221, 0.808);
 }
 .sketchbook {
-    visibility: hidden;
+    visibility: visible;
     height: 40rem;
-    width: 70rem;
+    width: 60rem;
     z-index: 100;
     background-color: blanchedalmond;
 }
 .sketchbook .content {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 .sketchbook img {
-    width: 35rem;
-    height: 38rem;
+    height: 15rem;
+    padding-right: 10px;
+    padding-top: 30px;
 }
 .resume {
     height: 38rem;
