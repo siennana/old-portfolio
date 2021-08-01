@@ -12,3 +12,13 @@ for (var i = 0; i < exits.length; i++) {
         closeWindow(this);
     }, false);
 }
+
+function openWindow(element) {
+    element.style.visibility='visible';
+}
+
+var resume = document.querySelector(".resume-button");
+resume.addEventListener("click", function() {
+    var x = document.querySelector(".resume");
+    openWindow(x);
+});
