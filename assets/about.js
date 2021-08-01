@@ -1,7 +1,14 @@
+function closeWindow(element) {
+    var x = element.parentElement.parentElement.parentElement;  
+    console.log(x);
+    x.style.visibility='hidden';
+}
 
-document.getElementsById("close").addEventListener("click", closeWindow);
+var exits = document.getElementsByClassName("exit");
+console.log(exits[0].parentElement.parentElement.parentElement);
 
-function closeWindow() {
-    var x = document.getElementById("close").parentElement.parentElement;  
-    x.style.display = "none";
+for (var i = 0; i < exits.length; i++) {
+    exits[i].addEventListener("click", function() {
+        closeWindow(this);
+    }, false);
 }
