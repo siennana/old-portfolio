@@ -22,3 +22,15 @@ resume.addEventListener("click", function() {
     var x = document.querySelector(".resume");
     openWindow(x);
 });
+
+var sketchbook = document.querySelector(".art-button");
+sketchbook.addEventListener("click", function() {
+    var x = document.querySelector(".sketchbook");
+    openWindow(x);
+});
+
+var readme = document.querySelector(".readme-button");
+readme.addEventListener("click", function() {
+    var x = document.querySelector(".readme");
+    openWindow(x);
+});
