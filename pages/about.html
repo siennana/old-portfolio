@@ -12,9 +12,14 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1a649ecc9b.js" crossorigin="anonymous"></script>
+
+    <!--Dependencies-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+
 </head>
 <body>
-    <!--Description Panels----------------------------------------------------------------------------->
+    <!--Description Panels---------------------------------------------------------------------------->
     <div class="panel sketchbook">
         <div class="top_bar">
             <div class="descriptor">Sketchbook</div>
@@ -25,10 +30,10 @@
             </div>
         </div>
         <div class="content">
-            <img src="images/art/IMG_1055[3575]_1.jpg">
-            <img src="images/art/IMG_1057[3579]_2.jpg">
-            <img src="images/art/IMG_1058[3581]_3.jpg">
-            <img src="images/art/IMG_1059[3583].jpg">
+            <img src="../assets/images/art/IMG_1055[3575]_1.jpg">
+            <img src="../assets/images/art/IMG_1057[3579]_2.jpg">
+            <img src="../assets/images/art/IMG_1058[3581]_3.jpg">
+            <img src="../assets/images/art/IMG_1059[3583].jpg">
         </div>
     </div>
     <div class="panel terminal">
@@ -57,6 +62,17 @@
                 and search for clues with the command line. All of that is down the line though!
             </p>
         </div>
+    </div>
+    <div class="panel term">
+        <div class="top_bar">
+            <div class="descriptor">Terminal</div>
+            <div class="buttons">
+                <div class="min bar_click"><i class="far fa-window-minimize"></i></div>
+                <div class="max bar_click"><i class="far fa-window-maximize"></i></div>
+                <div id="close" class="exit bar_click"><i class="far fa-window-close"></i></div>
+            </div>
+        </div>
+        <div class="content"></div>
     </div>
     <div class="panel resume">
         <div class="top_bar">
@@ -92,23 +108,23 @@
     <!--Desktop Icons-->
     <div class="desktop-icons">
         <div class="art-button icon">
-            <img src="icons/pixel_sketchbook.jpg">
+            <img src="../assets/icons/pixel_sketchbook.jpg">
             <div class="icon-text">sketchbook</div>
         </div>
         <div class="terminal-button icon">
-            <img src="icons/pixel_terminal.jpg">
+            <img src="../assets/icons/pixel_terminal.jpg">
             <div class="icon-text">terminal</div>
         </div>
         <div class="readme-button icon">
-            <img src="icons/pixel_readme.jpg">
+            <img src="../assets/icons/pixel_readme.jpg">
             <div class="icon-text">readme</div>
         </div>
         <div class="music-button icon">
-            <img src="icons/pixel_vinyl.jpg">
+            <img src="../assets/icons/pixel_vinyl.jpg">
             <div class="icon-text">music player</div>
         </div>
         <div class="resume-button icon">
-            <img src="icons/pixel_resume.jpg">
+            <img src="../assets/icons/pixel_resume.jpg">
             <div class="icon-text">Resume</div>
         </div>
     </div>
