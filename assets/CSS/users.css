@@ -47,5 +47,27 @@ body {
     transform: translate(-50%, -50%);
 }
 
+input[type=password] {
+    
+    width: 250px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: dotsfont;
+    visibility: hidden;
+}
+
+input[type=submit] {
+    padding: 5px; 
+    background: aqua; 
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 50%; 
+    visibility: hidden;
+}
+
+
+
 
 
