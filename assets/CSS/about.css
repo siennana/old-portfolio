@@ -77,8 +77,17 @@ body {
 }
 .sketchbook {
     height: 40rem;
-    width: 65rem;
-    visibility: visible;    
+    width: 80rem;
+    visibility: visible;   
+    background-color: white; 
+}
+.sketchbook .container {
+    display: flex;
+}
+.sketchbook .art-info {
+    padding: 2rem;
+    width: 20%;
+    line-height: 2rem;
 }
 .sketchbook .content {
     -webkit-column-count: 3;
@@ -88,7 +97,7 @@ body {
     column-count: 3;
     column-gap: 0px;
     margin-top: 3rem;
-    width: 100%;
+    width: 75%;
 }
 .sketchbook img {
     width: 100%;
