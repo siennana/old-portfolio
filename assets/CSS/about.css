@@ -33,7 +33,7 @@ body {
 .panel .top_bar {
     height: 25px;
     border-radius: 5px 5px 0 0;
-    background-color: #02143a77;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ body {
     justify-content: end;
 }
 .top_bar .bar_click {
-    border-left: 1px solid rgb(41, 0, 221);
+    border-left: 1px solid white;
     width: 30px;
     text-align: center;
     padding-top: 5px;
@@ -78,7 +78,7 @@ body {
 .sketchbook {
     height: 40rem;
     width: 80rem;
-    visibility: visible;   
+    visibility: hidden;   
     background-color: white; 
 }
 .sketchbook .container {
@@ -143,10 +143,13 @@ body {
     background-color: blue;
 }
 .readme {
-    width: 20rem;
-    height: 20rem;
-    left: 20%;
-    top: 30%;
+    height: 40rem;
+    width: 80rem;
+    background-color: white; 
+    visibility: visible;
+}
+.readme .content {
+    color: black;
 }
 .resume {
     height: 38rem;
