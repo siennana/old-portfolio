@@ -5,7 +5,6 @@ function closeWindow(element) {
 }
 
 var exits = document.getElementsByClassName("exit");
-console.log(exits[0].parentElement.parentElement.parentElement);
 
 for (var i = 0; i < exits.length; i++) {
     exits[i].addEventListener("click", function() {
@@ -25,7 +24,7 @@ resume.addEventListener("click", function() {
 
 var sketchbook = document.querySelector(".art-button");
 sketchbook.addEventListener("click", function() {
-    var x = document.querySelector(".sketchbook");
+    var x = document.querySelector("#sketchbook");
     openWindow(x);
 });
 
@@ -34,5 +33,15 @@ readme.addEventListener("click", function() {
     var x = document.querySelector(".readme");
     openWindow(x);
 });
+
+
+
+
+
+
+
+
+
+
 
 
