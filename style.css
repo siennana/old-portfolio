@@ -25,7 +25,7 @@ span {
 	}
 }
 .title-wrapper {
-	background-image: url(assets/images/desk.jpg);
+	background-image: url(assets/images/desk-2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -40,7 +40,7 @@ span {
 	width: 40rem;
 	left: 50%;
 	top: 35%;
-	transform: translate(-55%, -50%);
+	transform: translate(-60%, -50%);
 	text-align: center;
 	border-radius: 3px;
 	align-items: center;
