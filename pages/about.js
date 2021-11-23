@@ -28,9 +28,9 @@ sketchbook.addEventListener("click", function() {
     openWindow(x);
 });
 
-var readme = document.querySelector(".readme-button");
-readme.addEventListener("click", function() {
-    var x = document.querySelector(".readme");
+var projects = document.querySelector(".projects-button");
+projects.addEventListener("click", function() {
+    var x = document.querySelector(".projects");
     openWindow(x);
 });
 

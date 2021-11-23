@@ -15,14 +15,10 @@ body {
 	background-position: top;
     background-repeat: no-repeat;
     font-family: 'Source Code Pro', monospace;
-    font-size: 0.8em;
     image-rendering: -webkit-optimize-contrast;
 }
 .panel {
     position: absolute;
-    background-color: rgba(10, 0, 53, 0.815);
-    width: 40rem;
-    height: 20rem;
     border-radius: 5px;
     overflow: auto;
     top: 50%;
@@ -56,20 +52,6 @@ body {
 .top_bar .bar_click:hover {
     background-color: greenyellow;
     cursor: pointer;
-}
-.panel .subtitle {
-    display: block;
-    width: 40rem;
-    padding-bottom: 10px;
-    font-weight: 600;
-    color:rgb(255, 214, 34)
-}
-.panel .subtitle .cmd {
-    color: rgb(78, 255, 116);
-}
-.panel .content {
-    color: rgb(228, 228, 228);
-    width: 80%;
 }
 /*Desktop panels*************************************************************/
 .terminal {
@@ -143,14 +125,24 @@ body {
 .term textarea {
     background-color: blue;
 }
-.readme {
-    height: 40rem;
-    width: 80rem;
-    background-color: white; 
+.projects {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85); 
     visibility: visible;
 }
-.readme .content {
-    color: black;
+.projects .header {
+    background-color: #141B41;
+    color: white;
+    padding: 75px;
+}
+.projects .header .wrapper h1 {
+    margin: 0px;
+    font-size: 6em;
+    font-weight: 800;
+}
+.projects .header .wrapper p {
+    font-size: 1em;
 }
 .resume {
     height: 38rem;

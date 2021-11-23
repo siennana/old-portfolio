@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(18, 12, 102);
+    font-family: 'Source Code Pro', monospace;
+}
+.desk {
+    width: 100vw;
+    height: 50vh;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.048);
+}
+.computer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.monitor {
+    height: 40rem;
+    width: 60rem;
+    background-image: radial-gradient(#000000, #111111);
+    border-radius: 15px;
+}
+.screen {
+    height: 35rem;
+    width: 57rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    position: relative;
+    background-color: #bddfff;
+    box-shadow: 0 0 5px 5px #000000 inset, 0 0 500px rgba(255, 255, 255, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen .content {
+    font-size: 20px;
+}
+.monitor-lower-items {
+    display: flex;
+}
+.power {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #8bc7ff;
+    box-shadow: 0 0 20px 10px rgba(179, 205, 255, 0.445);
+    position: relative;
+    left: 58rem;
+    top: 4rem;
+}
+.sticky-note {
+    height: 8rem;
+    width: 10rem;
+    background-color: yellow;
+    position: relative;
+    top: 3rem;
+    z-index: 999;
+}
+#note-1 {
+    left: 6rem;
+}
+#note-2 {
+    left: 10rem;
+    background-color: pink;
+}
+.shaft {
+    height: 8rem;
+    width: 4rem;
+    background-image: linear-gradient(#111111, #222222);
+    position: relative;
+    left: 28rem;
+}
+.stand {
+    height: 0;
+    width: 30rem;
+    border-bottom: 6rem solid rgb(36, 36, 36);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0 68px 0 0 black;
+    clip-path: inset(0px 0px -30px 0px);
+    position: relative;
+    left: 10rem;
+}
