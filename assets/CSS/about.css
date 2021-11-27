@@ -20,16 +20,18 @@ body {
 .panel {
     position: absolute;
     border-radius: 5px;
+    border: 5px solid #030921;
     overflow: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    visibility: hidden;
+    background-color: #030921;
+    color: rgb(184, 235, 255);
 }
 .panel .top_bar {
     height: 25px;
     border-radius: 5px 5px 0 0;
-    background-color: black;
+    background-color: #030921;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -44,109 +46,80 @@ body {
     justify-content: end;
 }
 .top_bar .bar_click {
-    border-left: 1px solid white;
-    width: 30px;
-    text-align: center;
-    padding-top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: pink;
+    margin: 3px;
+}
+.top_bar #minimize {
+    background-color: gray;
+}
+.top_bar #maximize {
+    background-color: gray;
+}
+.top_bar #close {
+    background-color: red;
 }
 .top_bar .bar_click:hover {
-    background-color: greenyellow;
     cursor: pointer;
 }
 /*Desktop panels*************************************************************/
-.terminal {
-    height: 25rem;
-    box-shadow: 0px 0px 15px 1px rgba(41, 0, 221, 0.808);
-}
-#sketchbook {
-    height: 40rem;
-    width: 80rem;
-    visibility: hidden;   
-    background-color: white; 
-}
-#sketchbook .container {
-    display: flex;
-}
-#sketchbook .art-info {
-    padding: 2rem;
-    width: 20%;
-    line-height: 2rem;
-}
-#sketchbook .content {
-    -webkit-column-count: 3;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 3;
-    -moz-column-gap: 0px;
-    column-count: 3;
-    column-gap: 0px;
-    margin-top: 3rem;
-    width: 75%;
-}
-#sketchbook img {
-    width: 100%;
-    height: auto;
-}
-#sketchbook .content {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-}
-#sketchbook .img-holder {
-    position: relative;
-    margin: 5px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-#sketchbook .img-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    opacity: 0;
-    transition: all .3s linear;
-}
-#sketchbook .img-overlay .text {
-    padding: 70px;
-}
-.sketchbook .img-overlay:hover {
-    opacity: 0.5;
-}
-.term {
-    visibility: hidden;
-}
-.term div {
-    display: inline-block;
-}
-.term .content {
-    width: 100%;
-}
-.term textarea {
-    background-color: blue;
-}
-.projects {
+#projects {
     height: 90%;
     width: 90%;
-    background-color: rgba(255, 255, 255, 0.85); 
-    visibility: visible;
 }
-.projects .header {
-    background-color: #141B41;
-    color: white;
-    padding: 75px;
+#projects .content {
+    width: 75%;
+    margin: auto;
+    margin-top: 2rem;
 }
-.projects .header .wrapper h1 {
-    margin: 0px;
-    font-size: 6em;
+#projects .title {
+    font-size: 3rem;
     font-weight: 800;
+    margin-left: 3rem;
 }
-.projects .header .wrapper p {
-    font-size: 1em;
+#projects .project-cat {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.resume {
-    height: 38rem;
-    width: 51.5rem;
+.project-cat .container{
+    width: 40%;
+}
+.project-cat .photo {
+    width: 40%;
+    margin: 10px;
+    border-radius: 15px;
+}
+.project-cat .photo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    border-radius: 15px;
+}
+.project-cat .description {
+    background-color: #0a2752;
+    padding: 20px;
+    border-radius: 15px;
+}
+.project-cat .project-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.project-cat a {
+    color: rgb(0, 225, 255);
+    text-decoration: none;
+}
+.project-cat ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1rem;
+}
+.project-cat ul li {
+    float: left;
+    padding-right: 20px;
 }
 /*Desktop icons*************************************************************/
 .desktop-icons {
@@ -182,12 +155,11 @@ body {
 .resume-button {
     padding-top: 30px;
 }
+/*Bottom Bar*************************************************************/
 .bottom-bar {
     position: fixed;
-    background-color: rgba(97, 4, 184, 0.733);
-    border-top: 2px solid rgb(12, 0, 68);
+    background-color: #061c57ce;
     color: rgb(255, 255, 255);
-    height: 2.5rem;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -199,7 +171,8 @@ body {
     flex-direction: row;
 }
 .link-wrapper i {
-    padding: 10px;
+    padding: 5px;
+    padding-left: 15px;
     transition: all ease-in-out 100ms;
 }
 .link-wrapper a:nth-child(1) {

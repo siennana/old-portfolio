@@ -30,7 +30,7 @@ sketchbook.addEventListener("click", function() {
 
 var projects = document.querySelector(".projects-button");
 projects.addEventListener("click", function() {
-    var x = document.querySelector(".projects");
+    var x = document.querySelector("#projects");
     openWindow(x);
 });
 
