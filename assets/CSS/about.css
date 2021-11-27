@@ -30,12 +30,16 @@ body {
 }
 .panel .top_bar {
     height: 25px;
+    width: 100%;
     border-radius: 5px 5px 0 0;
     background-color: #030921;
     color: white;
     display: flex;
     justify-content: space-between;
-    cursor: move;
+    position: absolute;
+}
+.panel .content {
+    position: relative;
 }
 .top_bar .descriptor {
     padding-left: 10px;
@@ -67,17 +71,43 @@ body {
 /*Desktop panels*************************************************************/
 #projects {
     height: 90%;
-    width: 90%;
+    width: 70%;
+    opacity: 0.95;
 }
-#projects .content {
-    width: 75%;
+#projects .timeline {
+    position: absolute;
+    display: flex;
+    height: 120rem;
+    left: 1rem;
+}
+#projects .timeline-bar {
+    width: 4px;
+    background-color: #5cadff;
+}
+#projects .timeline ul {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0;
+}
+#projects .content-wrapper {
+    width: 80%;
     margin: auto;
     margin-top: 2rem;
 }
 #projects .title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     margin-left: 3rem;
+    font-family: poppins;
+}
+#projects .title span:nth-child(1) {
+    color: rgb(0, 0, 223);
+}
+#projects .intro {
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+
 }
 #projects .project-cat {
     margin-top: 2rem;
@@ -89,7 +119,7 @@ body {
     width: 40%;
 }
 .project-cat .photo {
-    width: 40%;
+    width: 50%;
     margin: 10px;
     border-radius: 15px;
 }
@@ -120,6 +150,15 @@ body {
 .project-cat ul li {
     float: left;
     padding-right: 20px;
+}
+#p-1, #p-3 {
+    text-align: right;
+}
+#p-1 ul {
+    float: right;
+}
+#p-3 ul {
+    float: right;
 }
 /*Desktop icons*************************************************************/
 .desktop-icons {
