@@ -19,24 +19,25 @@ body {
 }
 .panel {
     position: absolute;
-    border-radius: 5px;
-    border: 5px solid #030921;
+    border-radius: 10px;
+    border: 3px solid #030921;
     overflow: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #030921;
     color: rgb(184, 235, 255);
+    transition: all ease-in-out 300ms;
+    opacity: 0.95;
 }
 .panel .top_bar {
     height: 25px;
     width: 100%;
     border-radius: 5px 5px 0 0;
-    background-color: #030921;
+    background-color: #010616;
     color: white;
     display: flex;
     justify-content: space-between;
-    position: absolute;
 }
 .panel .content {
     position: relative;
@@ -69,30 +70,69 @@ body {
     cursor: pointer;
 }
 /*Desktop panels*************************************************************/
+#music {
+    height: 30rem;
+    width: 40rem;
+    background-image: linear-gradient(rgb(36, 36, 170), rgb(3, 2, 39));
+    opacity: 1;
+}
+#music .playlist {
+    height: 15rem;
+}
+#music .playlist .num-songs-wrapper {
+    background-color: #0c0d2b;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: right;
+    width: 38rem;
+}
+#music .playlist .songs-wrapper {
+    background-color: #0c0d2b;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    height: 12rem;
+    width: 38rem;
+}
+.playlist ul {
+    list-style-type: decimal;
+}
+#music .music-player {
+    background-color: #0c0d2b;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    height: 10rem;
+    width: 38rem;
+}
+
 #projects {
     height: 90%;
     width: 70%;
-    opacity: 0.95;
-}
-#projects .timeline {
-    position: absolute;
-    display: flex;
-    height: 120rem;
-    left: 1rem;
-}
-#projects .timeline-bar {
-    width: 4px;
-    background-color: #5cadff;
-}
-#projects .timeline ul {
-    list-style-type: none;
-    margin: 1rem;
-    padding: 0;
+    visibility: hidden;
 }
 #projects .content-wrapper {
     width: 80%;
     margin: auto;
     margin-top: 2rem;
+}
+#projects .circle {
+    background-color: rgb(224, 30, 224);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -999;
+    top: -5rem;
+    left: 4rem;
+}
+#projects #c-2 {
+    left: 14.5rem;
+    top: 0;
+}
+#projects #c-3 {
+    left: 25rem;
 }
 #projects .title {
     font-size: 4rem;
@@ -101,13 +141,35 @@ body {
     font-family: poppins;
 }
 #projects .title span:nth-child(1) {
-    color: rgb(0, 0, 223);
+    color: rgb(12, 12, 235);
 }
 #projects .intro {
     margin-left: 3rem;
-    margin-bottom: 5rem;
     margin-top: 1rem;
-
+}
+#projects .content-wrapper .buttons {
+    margin: 2rem 0rem 2rem 3rem;
+    display: flex;
+}
+#projects .content-wrapper .button {
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 223);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 6rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+.button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    transition: all ease-in-out 300ms;
+}
+#projects .content-wrapper .button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(205, 0, 223);
 }
 #projects .project-cat {
     margin-top: 2rem;
@@ -161,16 +223,22 @@ body {
     float: right;
 }
 /*Desktop icons*************************************************************/
+.current-time {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    color: white;
+}
 .desktop-icons {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
 }
 .icon {
-    height: 4rem;
     width: 5rem;
     text-align: center;
-    padding-top: 20px;
+    color: white;
+    margin-top: 1rem;
 }
 .icon img {
     width: 2.5rem;
@@ -179,20 +247,6 @@ body {
 .icon img:hover {
     transform: translateY(-5px);
     cursor: pointer;
-}
-.icon-text {
-    color: white;
-}
-.terminal-button img {
-    width: 2.5rem;
-    height: 2rem;
-}
-.terminal-button {
-    height: 3.5rem;
-    padding-top: 2rem;
-}
-.resume-button {
-    padding-top: 30px;
 }
 /*Bottom Bar*************************************************************/
 .bottom-bar {

@@ -20,7 +20,33 @@
     <title>Sienna OS</title>
 </head>
 <body>
-    <!--Description Panels---------------------------------------------------------------------------->
+    <div class="current-time">1:22PM</div>
+    <div id="like_button_container"></div>
+    <!--Panels---------------------------------------------------------------------------->
+    <div class="panel" id="music">
+        <div class="top_bar">
+            <div class="descriptor">Music Player</div>
+            <div class="buttons">
+                <div id="minimize" class="min bar_click"></div>
+                <div id="maximize" class="max bar_click"></div>
+                <div id="close" class="exit bar_click"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="playlist">
+                <div class="num-songs-wrapper">x songs</div>
+                <div class="songs-wrapper">
+                    <ul>
+                        <li><div class="song">This is a song - Random Artist</div></li>
+                    </ul>
+                </div>
+                <div class="music-player">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="panel" id="projects">
         <div class="top_bar">
             <div class="descriptor">Projects</div>
@@ -31,10 +57,10 @@
             </div>
         </div>
         <div class="content">
-            <div class="timeline">
-                <div class="timeline-bar"></div>
-            </div>
             <div class="content-wrapper">
+                <div class="circle" id="c-1"></div>
+                <div class="circle" id="c-2"></div>
+                <div class="circle" id="c-3"></div>
                 <div class="title">
                     <span>Hi, my name is</span><br>
                     <span>Sienna Brown</span>
@@ -42,6 +68,10 @@
                 <div class="intro">I'm a software engineer that specializes in application and web development.<br>
                     In my free time I also like to build games with Unity and create 3D art.<br> 
                     Check out some projects I've worked on over the years.
+                </div>
+                <div class="buttons">
+                    <a class="button" href="../assets/Resume_11_24_21.pdf" target="_blank">Resume</a>
+                    <a class="button" href="mailto:sienna.kaylenb@gmail.com">Contact Me</a>
                 </div>
                     <div class="project-cat" id="p-0">
                         <div class="container">
@@ -52,7 +82,7 @@
                             </div>
                             <div class="skills-wrapper">
                                 <ul class="right">
-                                    <li><a href="https://github.com/siennana/siennana.github.io" target = "_blank"><i class="fab fa-2x fa-github"></i></a></li>
+                                    <li><a href="https://github.com/siennana/siennana.github.io" target="_blank"><i class="fab fa-2x fa-github"></i></a></li>
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>JavaScript</li>
@@ -163,16 +193,12 @@
             <div class="icon-text">terminal</div>
         </div>
         <div class="projects-button icon">
-            <img src="../assets/icons/pixel_readme.jpg">
+            <img src="../assets/icons/pixel_resume.jpg">
             <div class="icon-text">projects</div>
         </div>
         <div class="music-button icon">
             <img src="../assets/icons/pixel_vinyl.jpg">
             <div class="icon-text">music player</div>
-        </div>
-        <div class="resume-button icon">
-            <img src="../assets/icons/pixel_resume.jpg">
-            <div class="icon-text">Resume</div>
         </div>
     </div>
 
@@ -188,6 +214,11 @@
     </div>
     <!--End Desktop Elements-->
     
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Load our React component. -->
     <script type="text/javascript" src="about.js"></script>
 
 </body>

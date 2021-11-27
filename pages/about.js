@@ -16,12 +16,6 @@ function openWindow(element) {
     element.style.visibility='visible';
 }
 
-var resume = document.querySelector(".resume-button");
-resume.addEventListener("click", function() {
-    var x = document.querySelector(".resume");
-    openWindow(x);
-});
-
 var sketchbook = document.querySelector(".art-button");
 sketchbook.addEventListener("click", function() {
     var x = document.querySelector("#sketchbook");
@@ -33,6 +27,39 @@ projects.addEventListener("click", function() {
     var x = document.querySelector("#projects");
     openWindow(x);
 });
+
+var music = document.querySelector(".music-button");
+music.addEventListener("click", function() {
+    var x = document.querySelector("#music");
+    openWindow(x);
+});
+
+'use strict';
+
+const e = React.createElement;
+
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    if (this.state.liked) {
+      return 'You liked this.';
+    }
+
+    return e(
+      'button',
+      { onClick: () => this.setState({ liked: true }) },
+      'Like'
+    );
+  }
+}
+
+
+const domContainer = document.querySelector('#like_button_container');
+ReactDOM.render(e(LikeButton), domContainer);
 
 
 
