@@ -1,3 +1,10 @@
+function updateClock() {
+    var dt = new Date();
+    var x = document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
+    setTimeout(updateClock, 1000);
+}
+updateClock();
+
 function closeWindow(element) {
     var x = element.parentElement.parentElement.parentElement;  
     console.log(x);

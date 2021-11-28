@@ -73,7 +73,7 @@ body {
 #music {
     height: 30rem;
     width: 40rem;
-    background-image: linear-gradient(rgb(36, 36, 170), rgb(3, 2, 39));
+    background-image: linear-gradient(rgb(36, 36, 170), rgb(7, 5, 58));
     opacity: 1;
 }
 #music .playlist {
@@ -223,11 +223,13 @@ body {
     float: right;
 }
 /*Desktop icons*************************************************************/
-.current-time {
+.time {
     position: absolute;
     right: 2rem;
     top: 2rem;
     color: white;
+    font-size: 3rem;
+    font-family: 'Chakra Petch', sans-serif;
 }
 .desktop-icons {
     display: flex;
