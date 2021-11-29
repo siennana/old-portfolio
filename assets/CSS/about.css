@@ -21,7 +21,6 @@ body {
     position: absolute;
     border-radius: 10px;
     border: 3px solid #030921;
-    overflow: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -41,6 +40,8 @@ body {
 }
 .panel .content {
     position: relative;
+    height: 100%;
+    overflow-y: auto;
 }
 .top_bar .descriptor {
     padding-left: 10px;
@@ -110,7 +111,6 @@ body {
 #projects {
     height: 90%;
     width: 70%;
-    visibility: hidden;
 }
 #projects .content-wrapper {
     width: 80%;

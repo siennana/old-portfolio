@@ -4,6 +4,10 @@ body {
     background-image: linear-gradient(black, rgb(18, 108, 182));
     height: 98vh;
 }
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
 .desk {
     width: 100vw;
     height: 40rem;
