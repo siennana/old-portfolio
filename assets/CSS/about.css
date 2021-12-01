@@ -57,6 +57,7 @@ body {
     border-radius: 50%;
     background-color: pink;
     margin: 3px;
+    cursor: pointer;
 }
 .top_bar #minimize {
     background-color: gray;
@@ -66,9 +67,6 @@ body {
 }
 .top_bar #close {
     background-color: red;
-}
-.top_bar .bar_click:hover {
-    cursor: pointer;
 }
 /*Desktop panels*************************************************************/
 #music {
@@ -245,10 +243,10 @@ body {
 .icon img {
     width: 2.5rem;
     transition: all ease-in-out 100ms;
+    cursor: pointer;
 }
 .icon img:hover {
     transform: translateY(-5px);
-    cursor: pointer;
 }
 /*Bottom Bar*************************************************************/
 .bottom-bar {

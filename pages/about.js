@@ -1,3 +1,19 @@
+import React, { Component } from "react";
+import "../assets/CSS/about.css"
+
+export const authEndpoint = 'https://accounts.spotify.com/authorize';
+
+const clientId = "";
+const redirectUri = "https://siennana.github.io/pages/about.html";
+
+
+const hash = window.location.hash
+  .substring(1)
+  .split("&")
+  .reduce(function(initial, item) {
+
+  })
+
 function updateClock() {
     var dt = new Date();
     var x = document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
