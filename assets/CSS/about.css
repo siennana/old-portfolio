@@ -14,7 +14,7 @@ body {
     background-size: cover;
 	background-position: top;
     background-repeat: no-repeat;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Gloria Hallelujah", cursive;
     image-rendering: -webkit-optimize-contrast;
 }
 .panel {
@@ -33,40 +33,40 @@ body {
     height: 25px;
     width: 100%;
     border-radius: 5px 5px 0 0;
-    background-color: #010616;
-    color: white;
+    background-color: #c0c7db;
+    color: black;
     display: flex;
     justify-content: space-between;
+}
+.top_bar .descriptor {
+    margin-left: 5px;
+}
+.top_bar .buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.top_bar .bar_click {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid black;
 }
 .panel .content {
     position: relative;
     height: 100%;
     overflow-y: auto;
 }
-.top_bar .descriptor {
-    padding-left: 10px;
-    padding-top: 5px;
-}
-.top_bar .buttons {
-    display: flex;
-    justify-content: end;
-}
-.top_bar .bar_click {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: pink;
-    margin: 3px;
-    cursor: pointer;
-}
 .top_bar #minimize {
-    background-color: gray;
+    background-color: rgb(159, 255, 196);
 }
 .top_bar #maximize {
-    background-color: gray;
+    background-color: rgb(236, 234, 193);
 }
 .top_bar #close {
-    background-color: red;
+    background-color: rgb(255, 121, 121);
 }
 /*Desktop panels*************************************************************/
 #music {
@@ -251,11 +251,11 @@ body {
 /*Bottom Bar*************************************************************/
 .bottom-bar {
     position: fixed;
-    background-color: #061c57ce;
-    color: rgb(255, 255, 255);
+    background-color: #afbee9;
+    color: white;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-direction: row;
 }
@@ -264,8 +264,7 @@ body {
     flex-direction: row;
 }
 .link-wrapper i {
-    padding: 5px;
-    padding-left: 15px;
+    padding-left: 20px;
     transition: all ease-in-out 100ms;
 }
 .link-wrapper a:nth-child(1) {

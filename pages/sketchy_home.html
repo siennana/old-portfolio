@@ -17,16 +17,18 @@
 	<title>Home</title>
 </head>
 <body>
-    <wired-card elevation="5">
-        <h1>Boom chaka chaka</h1>
-    </wired-card>
 	<div class="scene">
         <div class="background">
-            <wired-card class="calendar"></wired-card>
+            <wired-card elevation="5">
+                <h1>Boom chaka chaka</h1>
+            </wired-card>
+            <wired-card class="calendar">
+                <h1>Month: February</h6>
+            </wired-card>
         </div>
         <div class="desktop-monitor">
             <wired-card class="monitor">
-                <div class="screen"></div>
+                <wired-card elevation="2" class="screen"></wired-card>
             </wired-card>
             <div class="monitor-stand">
                 <wired-card class="stand-pole"></wired-card>
@@ -39,4 +41,5 @@
     <div class="mug"></div>
 </body>
 <script type="module" src="https://unpkg.com/wired-elements?module"></script>
+<script type="module" src="https://unpkg.com/wired-elements/lib/wired-calendar.js?module"></script>
 </html>
