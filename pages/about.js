@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import "../assets/CSS/about.css"
+//import React, { Component } from "react";
+//import "../assets/CSS/about.css";
 
-export const authEndpoint = 'https://accounts.spotify.com/authorize';
+//export const authEndpoint = 'https://accounts.spotify.com/authorize';
 
-const clientId = "";
-const redirectUri = "https://siennana.github.io/pages/about.html";
+//const clientId = "";
+//const redirectUri = "https://siennana.github.io/pages/about.html";
 
 
 const hash = window.location.hash
