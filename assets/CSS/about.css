@@ -55,7 +55,7 @@ body {
 }
 .panel .content {
     position: relative;
-    height: calc(100% - 12px);
+    height: calc(100% - 25px);
     overflow-y: auto;
 }
 .top_bar #minimize {
@@ -106,7 +106,7 @@ body {
 }
 
 #projects {
-    height: 90%;
+    height: 70%;
     width: 60%;
 }
 #projects .wrapper {
@@ -158,14 +158,6 @@ body {
     margin: 0;
 }
 /*Desktop icons*************************************************************/
-.time {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    color: white;
-    font-size: 3rem;
-    font-family: 'Chakra Petch', sans-serif;
-}
 .desktop-icons {
     display: flex;
     flex-direction: column;
@@ -185,6 +177,36 @@ body {
 .icon img:hover {
     transform: translateY(-5px);
 }
+/*Side Bar***************************************************************/
+.side-info-view {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background-color: aliceblue;
+}
+.side-info-view .wrapper {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+.side-info-view .info-box {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(227, 225, 245);
+}
+.date {
+    font-size: 2rem;
+}
+.time {
+    font-size: 3rem;
+}
+/*End Side Bar***********************************************************/
 /*Bottom Bar*************************************************************/
 .bottom-bar {
     position: fixed;

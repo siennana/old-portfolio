@@ -21,6 +21,18 @@ function updateClock() {
 }
 updateClock();
 
+function updateDate() {
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var dt = new Date();
+  var x = document.getElementById('current-date').innerHTML = dt.toLocaleDateString("en-US", options);
+  var millisTill12 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 10, 0, 0, 0) - now;
+  if (millisTill10 < 0) {
+    millisTill10 += 86400000; // it's after 10am, try 10am tomorrow.
+  }
+  setTimeout(updateDate, millisTill12);
+}
+updateDate();
+
 function closeWindow(element) {
     var x = element.parentElement.parentElement.parentElement;  
     console.log(x);
