@@ -185,6 +185,7 @@ body {
     height: 100%;
     width: 500px;
     background-color: aliceblue;
+    font-family: 'Klee One', cursive;
 }
 .side-info-view .wrapper {
     width: 85%;
@@ -202,6 +203,7 @@ body {
 }
 .date {
     font-size: 2rem;
+    margin-top: 1rem;
 }
 .time {
     font-size: 3rem;

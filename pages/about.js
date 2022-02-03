@@ -15,9 +15,9 @@ const hash = window.location.hash
   })
 
 function updateClock() {
-    var dt = new Date();
-    var x = document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
-    setTimeout(updateClock, 1000);
+  var dt = new Date();
+  var x = document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
+  setTimeout(updateClock, 1000);
 }
 updateClock();
 
@@ -25,26 +25,45 @@ function updateDate() {
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   var dt = new Date();
   var x = document.getElementById('current-date').innerHTML = dt.toLocaleDateString("en-US", options);
-  var millisTill12 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 10, 0, 0, 0) - now;
+  /*var millisTill12 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 10, 0, 0, 0) - now;
   if (millisTill10 < 0) {
     millisTill10 += 86400000; // it's after 10am, try 10am tomorrow.
-  }
-  setTimeout(updateDate, millisTill12);
+  }*/
+  setTimeout(updateDate, 1000);
 }
 updateDate();
 
+function weatherBalloon( cityID ) {
+  var key = '4bdb5400cbddc52169673702ff6a3959';
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + key)  
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function() {
+    // catch any errors
+  });
+}
+window.onload = function() {
+  weatherBalloon( 6167865 );
+}
+
+window.onload = function() {
+  weatherBalloon( 6167865 );
+}
+
 function closeWindow(element) {
-    var x = element.parentElement.parentElement.parentElement;  
-    console.log(x);
-    x.style.visibility='hidden';
+  var x = element.parentElement.parentElement.parentElement;  
+  console.log(x);
+  x.style.visibility='hidden';
 }
 
 var exits = document.getElementsByClassName("exit");
 
 for (var i = 0; i < exits.length; i++) {
-    exits[i].addEventListener("click", function() {
-        closeWindow(this);
-    }, false);
+  exits[i].addEventListener("click", function() {
+    closeWindow(this);
+  }, false);
 }
 
 function openWindow(element) {
@@ -53,14 +72,14 @@ function openWindow(element) {
 
 var sketchbook = document.querySelector(".art-button");
 sketchbook.addEventListener("click", function() {
-    var x = document.querySelector("#sketchbook");
-    openWindow(x);
+  var x = document.querySelector("#sketchbook");
+  openWindow(x);
 });
 
 var projects = document.querySelector(".projects-button");
 projects.addEventListener("click", function() {
-    var x = document.querySelector("#projects");
-    openWindow(x);
+  var x = document.querySelector("#projects");
+  openWindow(x);
 });
 
 var music = document.querySelector(".music-button");
