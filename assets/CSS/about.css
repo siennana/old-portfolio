@@ -9,8 +9,7 @@ body {
     padding: 0;
 }
 body {
-    background-color: rgb(18, 16, 104);
-    background-image: url(../images/neon_retro.jpg);
+    background-color: rgb(150, 211, 198);
     background-size: cover;
 	background-position: top;
     background-repeat: no-repeat;
@@ -183,7 +182,7 @@ body {
     right: 0;
     top: 0;
     height: 100%;
-    width: 500px;
+    width: 450px;
     background-color: aliceblue;
     font-family: 'Klee One', cursive;
 }
@@ -191,6 +190,10 @@ body {
     width: 85%;
     margin: auto;
     margin-top: 30px;
+}
+wired-calendar {
+    width: 100%;
+    margin-bottom: 10px;
 }
 .side-info-view .info-box {
     width: 100%;
