@@ -34,11 +34,10 @@ function updateDate() {
 updateDate();
 
 function drawWeather(d) {
-  //var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
-  //var fahrenheit = 30;
-  console.log('fuck');
-  console.log(d.city.name);
-  document.getElementById('tempurature').innerHTML = d.main.temp + '&deg;';
+  var fahrenheit = Math.round(((parseFloat(d.list[0].main.temp)-273.15)*1.8)+32);
+  document.getElementById('tempurature').innerHTML = fahrenheit + '&deg;';
+  document.getElementById('weather-conditions').innerHTML = d.city.name;
+  document.getElementById('location').innerHTML = "";
 }
 
 function weatherBalloon( cityID ) {
@@ -54,7 +53,7 @@ function weatherBalloon( cityID ) {
   });
 }
 window.onload = function() {
-  weatherBalloon( 524901 );
+  weatherBalloon( 5364306 );
 }
 
 function closeWindow(element) {
@@ -92,8 +91,6 @@ music.addEventListener("click", function() {
     var x = document.querySelector("#music");
     openWindow(x);
 });
-
-'use strict';
 
 const e = React.createElement;
 
