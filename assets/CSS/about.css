@@ -113,6 +113,9 @@ body {
     max-width: 80%;
     margin: auto;
 }
+#resume-button {
+    color: #b728db;
+}
 #projects .wrapper ul {
     list-style-type: none;
     padding-left: 0;
@@ -188,6 +191,7 @@ body {
 }
 .side-info-view .wrapper {
     width: 85%;
+    height: 95%;
     margin: auto;
     margin-top: 30px;
 }
@@ -197,18 +201,23 @@ wired-calendar {
 }
 .side-info-view .info-box {
     width: 100%;
-    height: 200px;
+    height: 20%;
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 10px;
     text-align: center;
     background-color: rgb(227, 225, 245);
-}
-.date {
     font-size: 2rem;
-    margin-top: 1rem;
 }
+
 .time {
+    font-size: 3rem;
+}
+.weather-data {
+    display: flex;
+    justify-content: center;
+}
+#location {
     font-size: 3rem;
 }
 /*End Side Bar***********************************************************/
@@ -216,19 +225,25 @@ wired-calendar {
 .bottom-bar {
     position: fixed;
     background-color: #afbee9;
-    color: white;
-    left: 0;
-    bottom: 0;
-    width: 99%;
+    bottom: 20px;
+    left: 25%;
+    width: 50%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .link-wrapper {
     display: flex;
     flex-direction: row;
 }
+.link-wrapper a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .link-wrapper i {
-    padding-left: 20px;
     transition: all ease-in-out 100ms;
 }
 .link-wrapper a:nth-child(1) {

@@ -36,8 +36,8 @@ updateDate();
 function drawWeather(d) {
   var fahrenheit = Math.round(((parseFloat(d.list[0].main.temp)-273.15)*1.8)+32);
   document.getElementById('tempurature').innerHTML = fahrenheit + '&deg;';
-  document.getElementById('weather-conditions').innerHTML = d.city.name;
-  document.getElementById('location').innerHTML = "";
+  document.getElementById('weather-conditions').innerHTML = d.list[0].weather[0].description;
+  document.getElementById('location').innerHTML = d.city.name
 }
 
 function weatherBalloon( cityID ) {
@@ -53,7 +53,7 @@ function weatherBalloon( cityID ) {
   });
 }
 window.onload = function() {
-  weatherBalloon( 5364306 );
+  weatherBalloon( 5128581 );
 }
 
 function closeWindow(element) {

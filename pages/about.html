@@ -66,7 +66,7 @@
                         to complete my undergraduate degree in computer science. Prior to this I had been working to teach myself the basics
                         of web and game development. Here are some projects I've worked on, both in work and in my free time.
                     </p>
-                    <a href="../assets/Resume_11_24_21.pdf" target="_blank"><wired-button>Check out my Resume</wired-button></a>
+                    <a id="resume-button" href="../assets/Resume_11_24_21.pdf" target="_blank">Check out my resume</a>
                 </div>
                 <ul>
                     <li>
@@ -193,7 +193,6 @@
     <!--Right Info Bar----------------------------------------------------------------------------->
     <div class="side-info-view">
         <div class="wrapper">
-            <wired-calendar></wired-calendar>
             <div class="info-box">
                 <div class="date">
                     <div id="current-date">Could not get time</div>
@@ -203,9 +202,11 @@
                 </div>
             </div>
             <div class="info-box">
-                <div id="tempurature">Could not get tempurature</div>
-                <div id="weather-conditions">Could not get weather condition</div>
                 <div id="location">Could not get location information</div>
+                <div class="weather-data">
+                    <div id="tempurature">Could not get tempurature</div>
+                </div>
+                <div id="weather-conditions">Could not get weather condition</div>
             </div>
             <div class="info-box"></div>
         </div>
@@ -233,7 +234,7 @@
     </div>
 
     <!--Desktop elements-->
-    <wired-card class="bottom-bar">
+    <div class="bottom-bar">
         <div class="link-wrapper">
             <a href="http://github.com/siennana" target = "_blank"><i class="fab fa-2x fa-github"></i></a>
             <a href="http://www.linkedin.com/in/siennab" target = "_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
