@@ -27,4 +27,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
         }
     }
     StartTextAnimation(0);
+
+    document.getElementById('power-button').addEventListener('click', function() {
+        var screen = document.getElementById('screen');
+        screen.classList.add('powerOn');
+    })
 });

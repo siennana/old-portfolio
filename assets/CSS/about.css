@@ -116,6 +116,9 @@ body {
 #resume-button {
     color: #b728db;
 }
+#projects wired-card {
+    background-color: aliceblue;
+}
 #projects .wrapper ul {
     list-style-type: none;
     padding-left: 0;
@@ -224,7 +227,7 @@ wired-calendar {
 /*Bottom Bar*************************************************************/
 .bottom-bar {
     position: fixed;
-    background-color: #afbee9;
+    background-color: rgb(189, 198, 243);
     bottom: 20px;
     left: 25%;
     width: 50%;
@@ -240,14 +243,14 @@ wired-calendar {
     flex-direction: row;
 }
 .link-wrapper a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .link-wrapper i {
     transition: all ease-in-out 100ms;
 }
 .link-wrapper a:nth-child(1) {
-    color: #e01818; 
+    color: #f53f3f; 
 }
 .link-wrapper a:nth-child(2) {
     color: #2f88e0;
@@ -256,7 +259,7 @@ wired-calendar {
     color: #b728db;
 }
 .link-wrapper a:nth-child(4) {
-    color: #faeb20;
+    color: #f8f682;
 }
 .link-wrapper a:nth-child(5) {
     color: #00b161;
