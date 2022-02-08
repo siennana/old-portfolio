@@ -16,7 +16,7 @@ const hash = window.location.hash
 
 function updateClock() {
   var dt = new Date();
-  var x = document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
+  var x = document.getElementById('current-time').innerHTML = dt.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
   setTimeout(updateClock, 1000);
 }
 updateClock();
