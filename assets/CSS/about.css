@@ -164,18 +164,19 @@ body {
 }
 /*Desktop icons*************************************************************/
 .desktop-icons {
+    width: 40px;
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
 }
 .icon {
-    width: 5rem;
     text-align: center;
     color: white;
     margin-top: 1rem;
 }
 .icon img {
-    width: 2.5rem;
+    width: 50px;
+    height: auto;
     transition: all ease-in-out 100ms;
     cursor: pointer;
 }
@@ -192,6 +193,16 @@ body {
     border-left: 3px solid black;
     background-color: rgb(219, 221, 236);
     font-family: 'Klee One', cursive;
+}
+.pull-tab {
+    background-color: #2f88e0;
+    height: 60px;
+    width: 15px;
+    position: absolute;
+    left: -19px;
+    top: calc(50% - 30px);
+    border:  3px solid black;
+    cursor: pointer;
 }
 .side-info-view .wrapper {
     width: 85%;
@@ -235,6 +246,10 @@ body {
     border: 3px solid black;
     border-radius: 10px;
 }
+.bottom-bar img {
+    height: 40px;
+    width: auto;
+}
 .link-wrapper {
     display: flex;
     flex-direction: row;
@@ -243,7 +258,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.link-wrapper i {
+.link-wrapper img {
     transition: all ease-in-out 100ms;
 }
 .link-wrapper a:nth-child(1) {
@@ -261,7 +276,7 @@ body {
 .link-wrapper a:nth-child(5) {
     color: #00b161;
 }
-.link-wrapper i:hover {
+.link-wrapper img:hover {
     transform: translateY(-5px);
 }
 
