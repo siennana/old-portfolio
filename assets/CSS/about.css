@@ -195,13 +195,14 @@ body {
     font-family: 'Klee One', cursive;
 }
 .pull-tab {
-    background-color: #2f88e0;
+    background-color: #62a1e0;
     height: 60px;
     width: 15px;
     position: absolute;
     left: -19px;
     top: calc(50% - 30px);
     border:  3px solid black;
+    border-radius: 5px 0px 0px 5px;
     cursor: pointer;
 }
 .side-info-view .wrapper {
