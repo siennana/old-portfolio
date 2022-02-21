@@ -185,9 +185,9 @@ body {
 }
 /*Side Bar***************************************************************/
 #side-info-view {
-    position: absolute;
-    right: 0;
+    position: fixed;
     top: 0;
+    right: -400px;
     height: 100vh;
     width: 400px;
     border-left: 3px solid black;
@@ -198,9 +198,17 @@ body {
     animation-name: slide-right;
     animation-duration: 5s;
 }
+.slide-left {
+    animation-name: slide-left;
+    animation-duration: 5s;
+}
 @keyframes slide-right {
-    0% {background-color: red; right:0px;}
-    50% {background-color: #00b161; right: -400px;}
+    0% {right:0px;}
+    50% {right:-400px;}
+}
+@keyframes slide-left {
+    0% {right:-400px;}
+    50% {right:0px;}
 }
 .pull-tab {
     background-color: #62a1e0;
@@ -210,6 +218,7 @@ body {
     left: -19px;
     top: calc(50% - 30px);
     border:  3px solid black;
+    border-right: 0px;
     border-radius: 5px 0px 0px 5px;
     cursor: pointer;
 }
@@ -228,7 +237,6 @@ body {
     background-color: white;
     padding: 10px 0px 10px 0px;
 }
-
 .time {
     font-size: 2rem;
     font-weight: 800;
@@ -246,8 +254,8 @@ body {
     position: fixed;
     background-color: rgb(189, 198, 243);
     bottom: 20px;
-    left: 25%;
-    width: 50%;
+    left: 30%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -190,30 +190,6 @@
     </div>
     <!--End Description Panels--------------------------------------------------------------------->
 
-    <!--Right Info Bar----------------------------------------------------------------------------->
-    <div id="side-info-view">
-        <div class="pull-tab" onclick="slideRight()"></div>
-        <div class="wrapper">
-            <div class="info-box">
-                <div class="date">
-                    <div id="current-date">Could not get time</div>
-                </div>
-                <div class="time">
-                    <div id="current-time">Could not get date</div>
-                </div>
-            </div>
-            <div class="info-box">
-                <div id="location">Could not get location information</div>
-                <div class="weather-data">
-                    <div id="tempurature">Could not get tempurature</div>
-                </div>
-                <div id="weather-conditions">Could not get weather condition</div>
-            </div>
-            <div id="calendar" class="info-box"></div>
-        </div>
-    </div>
-    <!--End Right Info Bar------------------------------------------------------------------------->
-
     <!--Desktop Icons-->
     <div class="desktop-icons">
         <div class="art-button icon">
@@ -239,11 +215,35 @@
         <div class="link-wrapper">
             <a href="http://github.com/siennana" target = "_blank"><img src="../assets/icons/github-sketchy.png"/></a>
             <a href="http://www.linkedin.com/in/siennab" target = "_blank"><img src="../assets/icons/linkedin-sketchy.png"/></i></a>
-            <a href="https://codepen.io/siennana" target="_blank"><img src="../assets/icons/spotify-sketchy.png"/></a>
-            <a href="https://codepen.io/siennana" target="_blank"><img src="../assets/icons/gmail-sketchy.png"/></a>
+            <a href="https://open.spotify.com/user/sienna.brown-us" target="_blank"><img src="../assets/icons/spotify-sketchy.png"/></a>
+            <a href="mailto:sienna.kaylenb@gmail.com" target="_blank"><img src="../assets/icons/gmail-sketchy.png"/></a>
         </div>
     </wired-card>
     <!--End Desktop Elements-->
+
+    <!--Right Info Bar----------------------------------------------------------------------------->
+    <div id="side-info-view">
+        <div class="pull-tab" onclick="toggleSideView()"></div>
+        <div class="wrapper">
+            <div class="info-box">
+                <div class="date">
+                    <div id="current-date">Could not get time</div>
+                </div>
+                <div class="time">
+                    <div id="current-time">Could not get date</div>
+                </div>
+            </div>
+            <div class="info-box">
+                <div id="location">Could not get location information</div>
+                <div class="weather-data">
+                    <div id="tempurature">Could not get tempurature</div>
+                </div>
+                <div id="weather-conditions">Could not get weather condition</div>
+            </div>
+            <div id="calendar" class="info-box"></div>
+        </div>
+    </div>
+    <!--End Right Info Bar------------------------------------------------------------------------->
     
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->

@@ -114,11 +114,29 @@ class LikeButton extends React.Component {
 }
 
 
-const domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(LikeButton), domContainer);
+function toggleSideView() {
+  var x = document.querySelector('#side-info-view');
+  if (x.className == 'slide-right') {
+    slideLeft();
+  }
+  else if (x.className == 'slide-left') {
+    slideRight();
+  }
+  else {
+    slideLeft();
+  }
+}
 
 function slideRight() {
-  document.querySelector('#side-info-view').className = 'slide-right';
+  var x = document.querySelector('#side-info-view');
+  x.className = 'slide-right';
+  x.style.right = '-400px';
+}
+
+function slideLeft() {
+  var x = document.querySelector('#side-info-view');
+  x.className = 'slide-left';
+  x.style.right = '0px';
 }
 
 
