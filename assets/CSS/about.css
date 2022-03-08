@@ -16,13 +16,27 @@ body {
     font-family: "Gloria Hallelujah", cursive;
     image-rendering: -webkit-optimize-contrast;
 }
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  }
+  
 .panel {
     position: absolute;
     border-radius: 10px;
     border: 3px solid #030921;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #e9ebf5;
     color: rgb(27, 27, 27);
     transition: all ease-in-out 300ms;
@@ -35,6 +49,7 @@ body {
     color: black;
     display: flex;
     justify-content: space-between;
+    cursor: move;
 }
 .top_bar .descriptor {
     margin-left: 5px;
@@ -113,11 +128,13 @@ body {
     max-width: 80%;
     margin: auto;
 }
+#projects .project {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
 #resume-button {
     color: #b728db;
-}
-#projects wired-card {
-    background-color: aliceblue;
 }
 #projects .wrapper ul {
     list-style-type: none;
@@ -259,13 +276,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    padding: 8px;
     border: 3px solid black;
     border-radius: 10px;
 }
 .bottom-bar img {
+    width: 40px;
     height: 40px;
-    width: auto;
 }
 .link-wrapper {
     display: flex;
