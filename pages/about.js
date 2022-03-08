@@ -56,7 +56,6 @@ window.onload = function() {
   weatherBalloon( 5128581 );
 }
 
-dragElement(document.getElementById('mydiv'));
 dragElement(document.getElementById('projects'));
 
 function dragElement(elmnt) {
