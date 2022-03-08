@@ -26,20 +26,22 @@ body {
   }
   
   #mydivheader {
-    padding: 10px;
+    height: 25px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background-color: #c0c7db;
+    color: black;
+    display: flex;
+    justify-content: space-between;
     cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
   }
-  
+
 .panel {
     position: absolute;
     border-radius: 10px;
     border: 3px solid #030921;
     background-color: #e9ebf5;
     color: rgb(27, 27, 27);
-    transition: all ease-in-out 300ms;
 }
 .panel .top_bar {
     height: 25px;
