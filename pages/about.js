@@ -56,6 +56,13 @@ window.onload = function() {
   weatherBalloon( 5128581 );
 }
 
+document.getElementById('music').addEventListener('click', function() {
+  document.getElementById('music').style.zIndex += 100;
+})
+document.getElementById('projects').addEventListener('click', function() {
+  document.getElementById('projects').style.zIndex += 100;
+})
+
 dragElement(document.getElementById('projects'));
 dragElement(document.getElementById('music'));
 
