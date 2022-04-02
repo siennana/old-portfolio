@@ -72,6 +72,7 @@ body {
     width: 40rem;
     background-image: linear-gradient(rgb(36, 36, 170), rgb(7, 5, 58));
     opacity: 1;
+    visibility: hidden;
 }
 #music .playlist {
     height: 15rem;
@@ -107,6 +108,7 @@ body {
 #projects {
     height: 70%;
     width: 60%;
+    visibility: hidden;
 }
 #projects .wrapper {
     width: 1300px;

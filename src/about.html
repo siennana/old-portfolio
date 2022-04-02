@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href = "../assets/CSS/about.css">
+    <link rel="stylesheet" href = "../public/CSS/about.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <title>Sienna OS</title>
 </head>
 <body>
-    <div id="like_button_container"></div>
+    <div id="root"></div>
     <!--Panels---------------------------------------------------------------------------->
     <div class="panel" id="music">
         <div class="top_bar" id="musicheader">
@@ -193,19 +193,19 @@
     <!--Desktop Icons-->
     <div class="desktop-icons">
         <div class="art-button icon">
-            <img src="../assets/icons/open-book.png">
+            <img src="../public/Images/icons/open-book.png">
             <div class="icon-text">sketchbook</div>
         </div>
         <div class="terminal-button icon">
-            <img src="../assets/icons/terminal-sketchy.png">
+            <img src="../public/Images/icons/terminal-sketchy.png">
             <div class="icon-text">terminal</div>
         </div>
         <div class="projects-button icon">
-            <img src="../assets/icons/development-sketchy.png">
+            <img src="../public/Images/icons/development-sketchy.png">
             <div class="icon-text">projects</div>
         </div>
         <div class="music-button icon">
-            <img src="../assets/icons//turntable-sketchy.png">
+            <img src="../public/Images/icons/turntable-sketchy.png">
             <div class="icon-text">music player</div>
         </div>
     </div>
@@ -213,10 +213,10 @@
     <!--Desktop elements-->
     <div class="bottom-bar">
         <div class="link-wrapper">
-            <a href="http://github.com/siennana" target = "_blank"><img src="../assets/icons/github-sketchy.png"/></a>
-            <a href="http://www.linkedin.com/in/siennab" target = "_blank"><img src="../assets/icons/linkedin-sketchy.png"/></i></a>
-            <a href="https://open.spotify.com/user/sienna.brown-us" target="_blank"><img src="../assets/icons/spotify-sketchy.png"/></a>
-            <a href="mailto:sienna.kaylenb@gmail.com" target="_blank"><img src="../assets/icons/gmail-sketchy.png"/></a>
+            <a href="http://github.com/siennana" target = "_blank"><img src="../public/Images/icons/github-sketchy.png"/></a>
+            <a href="http://www.linkedin.com/in/siennab" target = "_blank"><img src="../public/Images/icons/linkedin-sketchy.png"/></i></a>
+            <a href="https://open.spotify.com/user/sienna.brown-us" target="_blank"><img src="../public/Images/icons/spotify-sketchy.png"/></a>
+            <a href="mailto:sienna.kaylenb@gmail.com" target="_blank"><img src="../public/Images/icons/gmail-sketchy.png"/></a>
         </div>
     </div>
     <!--End Desktop Elements-->
@@ -247,11 +247,12 @@
     
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- Load our React component. -->
-    <script type="text/javascript" src="about.js"></script>
+    <script type="text/javascript" src="../public/JS/about.js"></script>
+    <script type="text/babel" src="jsreact-test.js"></script>
 
     <script type="module" src="https://unpkg.com/wired-elements?module"></script>
     <script type="module" src="https://unpkg.com/wired-elements/lib/wired-calendar.js?module"></script>
