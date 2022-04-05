@@ -20,6 +20,8 @@
   },
   "homepage": "https://siennana.github.io",
   "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2"
   },
